@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Serenibots Innovation</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">Serenibots</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-logo">
+                <div class="mobile-logo-icon">
+                    <img src="assets/logo.png" alt="">
+                </div>
+            </div>
+            <button class="hamburger-menu" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h1>Contact Us</h1>
+                <p>serenibotsofficial@gmail.com</p>
+                <p>+91 9003089118</p>
+            </div>
+            <div class="contact-content">
+                <div class="payment-section">
+    <h3>Support Our Innovation</h3>
+
+    <a href="https://payments.cashfree.com/forms?code=serenibots-crowdfund" target="_blank" class="payment-button-link">
+        <button class="pay-btn">
+            <span class="btn-text">Donate Us</span>
+            <div class="icon-container">
+                <svg viewBox="0 0 24 24" class="icon card-icon">
+                    <path d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18C2,19.11 2.89,20 4,20H20C21.11,20 22,19.11 22,18V6C22,4.89 21.11,4 20,4Z" fill="currentColor"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="icon payment-icon">
+                    <path d="M2,17H22V21H2V17M6.25,7H9V6H6V3H18V6H15V7H17.75L19,17H5L6.25,7M9,10H15V8H9V10M9,13H15V11H9V13Z" fill="currentColor"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="icon dollar-icon">
+                    <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" fill="currentColor"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="icon wallet-icon default-icon">
+                    <path d="M21,18V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V6H12C10.89,6 10,6.9 10,8V16A2,2 0 0,0 12,18M12,16H22V8H12M16,13.5A1.5,1.5 0 0,1 14.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,12A1.5,1.5 0 0,1 16,13.5Z" fill="currentColor"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="icon check-icon">
+                    <path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z" fill="currentColor"></path>
+                </svg>
+            </div>
+        </button>
+    </a>
+    <p>Your contribution fuels our research and helps us bring this life saving technology to those who need it most. Click the button above to donate securely.</p>
+</div>
+                <div class="form-section">
+                    <form id="contact-form">
+                        <input type="text" id="user_name" name="user_name" placeholder="Name" required>
+                        <input type="email" id="user_email" name="user_email" placeholder="E mail" required>
+                        <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        <button type="submit">Send</button>
+                        <p class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <div class="footer-column">
+                <h4>Contact Details</h4>
+                <p>Thelagan Varadharaj <span>+91 9003089118</span></p>
+                <p>Hemanth Balaaji V <span>+91 6369386281</span></p>
+            </div>
+            <div class="footer-column">
+                <h4>Incubated at</h4>
+                <p>Chennai Institute of Technology Innovation Labs</p>
+            </div>
+            <div class="footer-column social-column">
+                <a href="https://www.linkedin.com/company/serenibots-innovation/" target="_blank" aria-label="LinkedIn">serenibotsinnovation <i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/serenibotsinnovation/" aria-label="Instagram" target="_blank">serenibots innovation <i class="fab fa-instagram"></i></a>
+                <a href="mailto:serenibotsofficial@gmail.com" aria-label="Email">serenibotsofficial@gmail.com <i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright reserved - serenibots innovation</p>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>
